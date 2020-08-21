@@ -8,4 +8,5 @@ public interface StudentRepo {
     Baseresponse getAllStudent();
     Baseresponse addStudent(InsertModel student);
     Baseresponse deleteStudent(int student_id);
+    Baseresponse getOneStudent(int student_id);
 }

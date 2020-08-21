@@ -11,6 +11,10 @@ public class InsertModel {
         this.age = age;
     }
 
+    public InsertModel() {
+
+    }
+
     public String getName() {
         return name;
     }

@@ -27,6 +27,11 @@ public class StudentCtrl {
         return studentService.getAllStudent();
     }
 
+    @GetMapping(value = "/get-one-student/{student_id}")
+    public Baseresponse get_one_students(@PathVariable int student_id) {
+        return studentService.getOneStudent(student_id);
+    }
+
     @PostMapping(value = "add-student")
     public Baseresponse add_student(@RequestBody InsertModel students) {
         return studentService.addStudent(students);
